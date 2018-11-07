@@ -133,11 +133,6 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     "hyperlinks",
-    "hyper-tabs-enhanced",
-    "hypergoogle",
-    "hpm-cli",
-    "hypertheme",
-    "hyperborder",
     "hyper-materialshell",
   ],
 
