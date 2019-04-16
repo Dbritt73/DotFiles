@@ -1,0 +1,27 @@
+{
+
+    // Controls the font family.
+    "editor.fontFamily": "hack",
+
+    // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+    "editor.tabSize": 4,
+
+    // Controls the font size in pixels.
+    "editor.fontSize": 12,
+
+    // controls the color theme
+    "workbench.colorTheme": "City Lights",
+
+    //Controls vertical ruler
+    "editor.rulers": [120],
+
+    //Default file type when VSCode opens new project
+    "files.defaultLanguage": "powershell",
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "sync.gist": "bbc90a3ba6cc7406e77dde997d335b78",
+    "window.zoomLevel": 2,
+
+    //PowerShell ISE style tab completion
+    "editor.tabCompletion": "on"
+
+}
