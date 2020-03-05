@@ -1,0 +1,45 @@
+#Contact Settings
+set realname = "Darrin Britton"
+set from = "username@org.org"
+set use_from = yes
+set envelope_from = yes
+
+#Authentication
+set smtp_url = "smtp://username@org.org@smtp.office365.com:587/"
+set smtp_pass = "app password generated from Office365"
+set imap_user = "username@org.org"
+set imap_pass = "app password generated from office365"
+
+set folder = "imaps://outlook.office365.com:993"
+set spoolfile = "+INBOX"
+set ssl_starttls = yes
+
+mailboxes +imaps://outlook.office365.com:993/sent \
+	  +imaps://outlook.office365.com:993/Drafts
+
+#Sidebar
+set sidebar_visible = yes
+set sidebar_width = 24
+#color sidebar_new yellow default
+color sidebar_new color221 color233
+
+#StatusBar
+set status_chars = "*%A"
+set status_format set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+
+# Header Options -------------------------------------
+ignore *                                # ignore all headers
+unignore from: to: cc: date: subject:   # show only these
+unhdr_order *                           # some distros order things by default
+hdr_order from: to: cc: date: subject:  # and in this order
+
+
+bind index G imap-fetch-mail
+set editor = "nano"
+unset record
+set move = no
+set charset = "utf-8"
+set sort = reverse-date-received
+
+auto_view text/html #viewhtml automatically
+alternative_order text/plain text/enriched text/html #save HTML for last
